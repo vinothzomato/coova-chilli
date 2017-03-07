@@ -10,11 +10,11 @@
 #   Local Network Configurations
 # 
 
-# HS_WANIF=eth0            # WAN Interface toward the Internet
-HS_LANIF=eth1		   # Subscriber Interface for client devices
-HS_NETWORK=10.1.0.0	   # HotSpot Network (must include HS_UAMLISTEN)
+HS_WANIF=eth0            # WAN Interface toward the Internet
+HS_LANIF=wlan0		   # Subscriber Interface for client devices
+HS_NETWORK=192.168.1.0	   # HotSpot Network (must include HS_UAMLISTEN)
 HS_NETMASK=255.255.255.0   # HotSpot Network Netmask
-HS_UAMLISTEN=10.1.0.1	   # HotSpot IP Address (on subscriber network)
+HS_UAMLISTEN=192.168.1.1	   # HotSpot IP Address (on subscriber network)
 HS_UAMPORT=3990            # HotSpot UAM Port (on subscriber network)
 HS_UAMUIPORT=4990          # HotSpot UAM "UI" Port (on subscriber network, for embedded portal)
 
@@ -25,8 +25,8 @@ HS_UAMUIPORT=4990          # HotSpot UAM "UI" Port (on subscriber network, for e
 # HS_DNS_DOMAIN=
 
 # OpenDNS Servers
-HS_DNS1=208.67.222.222
-HS_DNS2=208.67.220.220
+HS_DNS1=192.168.1.1
+HS_DNS2=
 
 ###
 #   HotSpot settings for simple Captive Portal
@@ -61,7 +61,7 @@ HS_UAMALIASNAME=chilli
 # HS_UAMDOMAINS=".paypal.com,.paypalobjects.com"
 
 #   Optional initial redirect and RADIUS settings
-# HS_SSID=<ssid>	   # To send to the captive portal
+HS_SSID=Restaurant	   # To send to the captive portal
 # HS_NASMAC=<mac address>  # To explicitly set Called-Station-Id
 # HS_NASIP=<ip address>    # To explicitly set NAS-IP-Address
 
@@ -189,7 +189,7 @@ HS_PROVIDER_LINK=http://coova.github.io/
 #   WISPr RADIUS Attribute support
 #
 
-HS_LOC_NAME="My HotSpot"	   # WISPr Location Name and used in portal
+HS_LOC_NAME="Zomato HotSpot"	   # WISPr Location Name and used in portal
 
 #   WISPr settings (to form a proper WISPr-Location-Id)
 # HS_LOC_NETWORK="My Network"	   # Network name

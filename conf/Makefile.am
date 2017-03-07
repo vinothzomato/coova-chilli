@@ -42,6 +42,12 @@ up.sh: Makefile up.sh.in
 	chmod +x up.sh.tmp
 	mv up.sh.tmp up.sh
 
+ipup.sh: Makefile ipup.sh.in
+	rm -f ipup.sh ipup.sh.tmp
+	$(edit) ipup.sh.in >ipup.sh.tmp
+	chmod +x ipup.sh.tmp
+	mv ipup.sh.tmp ipup.sh	
+
 down.sh: Makefile down.sh.in
 	rm -f down.sh down.sh.tmp
 	$(edit) down.sh.in >down.sh.tmp
