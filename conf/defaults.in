@@ -58,7 +58,7 @@ HS_UAMALIASNAME=chilli
 # HS_UAMAAAURL=http://my-site/script.php
 
 #   Put entire domains in the walled-garden with DNS inspection
-# HS_UAMDOMAINS=".paypal.com,.paypalobjects.com"
+HS_UAMDOMAINS=".zomato.com,.zmtcdn.com"
 
 #   Optional initial redirect and RADIUS settings
 HS_SSID=Restaurant	   # To send to the captive portal
