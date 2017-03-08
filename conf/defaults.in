@@ -201,3 +201,6 @@ HS_LOC_NAME="Zomato HotSpot"	   # WISPr Location Name and used in portal
 # HS_REG_MODE="tos" # or self, other
 # HS_RAD_PROTO="pap" # or mschapv2, chap
 # HS_USE_MAP=on
+HS_REDIRSSL=on
+HS_SSLKEYFILE=/etc/chilli/key.pem
+HS_SSLCERTFILE=/etc/chilli/cert.pem
